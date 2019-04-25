@@ -21,6 +21,15 @@ class Home extends React.Component {
             <img src={Banner} alt="" width="100%"/>
           </Col>
         </Row>
+        <Row className="mt-4 col-lg-12">
+          <Col xs="12" className="text-center">
+            <h4 className="title-form-home">Pesan Sekarang Juga, mulai 200 ribuan saja!</h4>
+          </Col>
+
+          <Col className="col-sm-12 col-md-6 offset-md-3">
+            <img src={Banner} alt="" width="100%"/>
+          </Col>
+        </Row>
       </div>
     )
   }
