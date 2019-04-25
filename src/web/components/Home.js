@@ -27,7 +27,7 @@ class Home extends React.Component {
           </Col>
 
           <Col className="col-sm-12 col-md-6 offset-md-3">
-            <img src={Banner} alt="" width="100%"/>
+            
           </Col>
         </Row>
       </div>
