@@ -31,17 +31,21 @@
     "native-base": "^2.12.1",
     "prop-types": "^15.7.2",
     "react": "16.5.0",
+    "react-alice-carousel": "^1.13.11",
+    "react-countdown-now": "^2.1.0",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
     "react-native-router-flux": "4.0.6",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.2.2",
+    "react-slick": "^0.24.0",
     "react-timer-mixin": "^0.13.4",
     "reactstrap": "^7.1.0",
     "redux": "^4.0.1",
     "redux-persist": "^5.10.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.1.1",

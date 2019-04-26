@@ -13,10 +13,10 @@ export const errorMessages = {
 
   // Member
   memberExists: 'Member already exists',
-  missingFirstName: 'First name is missing',
-  missingLastName: 'Last name is missing',
-  missingEmail: 'Email is missing',
-  missingPassword: 'Password is missing',
+  missingNama: 'Tolong masukkan nama anda',
+  missingNoTlp: 'Tolong masukkan nomor telepon anda',
+  missingEmail: 'Tolong masukkan email anda',
+  missingAreaDomisili: 'Tolong masukkan area domisili anda',
   passwordsDontMatch: 'Passwords do not match',
 
   // Recipes

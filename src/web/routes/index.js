@@ -3,11 +3,8 @@ import { Switch, Route } from 'react-router-dom';
 
 // Routes
 import Home from '../components/Home';
-
-import UpdateProfileContainer from '../../containers/UpdateProfile';
-import UpdateProfileComponent from '../components/User/UpdateProfile';
-
-import Error from '../components/UI/Error';
+import Cont from '../../containers/UpdateData';
+import Thanks from '../components/Thanks';
 
 const Index = () => (
   <Switch>
@@ -15,19 +12,15 @@ const Index = () => (
       exact
       path="/"
       render={props => (
-          <Home {...props} />
+        <Cont {...props} Layout={Home}/>
+          
       )}
     />
     <Route
-      path="/success"
+      exact
+      path="/thanks"
       render={props => (
-        
-        <UpdateProfileContainer {...props} Layout={UpdateProfileComponent} />
-      )}
-    />
-    <Route
-      render={props => (
-        <Error {...props} title="404" content="Sorry, the route you requested does not exist" />
+          <Thanks/>
       )}
     />
   </Switch>

@@ -1,7 +1,12 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,700');
 
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 $bg-img: url('../../images/Background.jpg');
+
+$bg-thanks: url('../../images/countdown-bg.jpg');
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -22,7 +27,7 @@ body {
 .btn-pesan {
   background-color: #BE0909;
   border: 1px solid #BE0909;
-  padding: 5px 10px;
+  padding: 8px 15px;
   color: white;
   font-weight: 600;
   border-radius: 20px;
@@ -37,8 +42,17 @@ body {
  margin: 0;
 }
 
+.banner-thanks {
+  background: $bg-thanks;
+  height: 100vh;
+  padding: 20vh;
+  padding-bottom: 10vh;
+  margin: 0;
+  background-size: cover;
+ }
+
 .heading-home {
-  color: black;
+  color: white;
   font-weight: 500;
   letter-spacing: 1px;
   margin-top: 1.5em;
@@ -82,4 +96,77 @@ body {
 
 input {
   border-color: black !important;
+}
+
+.footer {
+  background-color: #E3E3E3;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 18px;
+  color:#080808;
+}
+
+.btn-form {
+  margin-bottom: 5.5em;
+  margin-top: 2.5em;
+}
+
+.section h3{
+  color: black;
+  font-weight: 600;
+  margin-top: 1.5em;
+}
+
+
+.img-slide {
+  position: relative;
+  float: left;
+  width:  100px;
+  height: 60px;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+  padding: 0 1em;
+  display: block !important;
+}
+
+.carousel-container {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.carousel-button-group {
+  position: absolute;
+}
+
+
+.slick-arrow{
+  color:white !important;
+  background-color: black !important;
+}
+
+.slick-slider {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.href-countdown {
+  color: #FADB1B;
+}
+
+.count-click {
+  color: white;
+  font-weight: 600;
+}
+
+.count-thanks {
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.countdown {
+  font-size: 5em;
+  font-weight: 600;
+  color: white;
 }
