@@ -10,7 +10,7 @@ class Section extends React.Component{
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 7,
+        slidesToShow: 8,
         slidesToScroll: 1,
       };
     return (

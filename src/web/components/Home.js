@@ -6,6 +6,7 @@ import Header from './Header'
 import Heading from './Heading'
 import Footer from './Footer'
 import Section from './Section'
+import Detail from './Detail'
 
 class Home extends React.Component {
   constructor(props) {
@@ -59,13 +60,14 @@ class Home extends React.Component {
         <Header/>
         <Heading/>
         <Section/>
+        <Detail/>
         
         <Row className="mt-4 col-lg-12">
           <Col xs="12" className="text-center">
             <h3 className="title-form-home">Pesan Sekarang Juga, mulai 200 ribuan saja!</h3>
           </Col>
 
-          <Col className="col-sm-12 col-md-8 offset-md-2 mt-3">
+          <Col className="col-sm-12 col-lg-8 offset-lg-2 mt-3 col">
             <Form onSubmit={this.handleSubmit}>
               <Row form className="pl-4">
                 <Col md={5} className="mr-3 ml-5">
