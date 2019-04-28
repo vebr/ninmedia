@@ -14,7 +14,7 @@ class Heading extends React.Component {
             </button>
           </Col>
           <Col xs="6">
-            <img src={Banner} alt="" width="100%"/>
+            <img src={Banner} alt="" width="100%" className="heading-img"/>
           </Col>
         </Row>
     )  
