@@ -12,6 +12,16 @@ class Section extends React.Component{
         speed: 500,
         slidesToShow: 8,
         slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false
+            },
+          },]
       };
     return (
             <Container className="section text-center">

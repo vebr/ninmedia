@@ -13,9 +13,9 @@ class Header extends React.Component{
           <div>
             <Navbar color="white" light expand="md" className="navbar-home">
               <Container>
-                <NavbarBrand href="/"><img src={Logo} alt=""/></NavbarBrand>
-                <Nav className="ml-auto" navbar>
-                  <button className="btn-pesan">
+                <a className="logo-nav" href="/"><img src={Logo} width="100%" alt=""/></a>
+                <Nav className="wrapper-btn-psn" navbar>
+                  <button className="btn-pesan ml-auto">
                       PESAN SEKARANG
                   </button>    
                 </Nav>

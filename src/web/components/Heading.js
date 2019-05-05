@@ -9,11 +9,13 @@ class Heading extends React.Component {
           <Col xs="6" className="pt-3 cont-home">
             <h4 className="heading-home">Nonton Film Premium <br/>Bollywood & Hollywood</h4>
             <p className="sub-heading-home">SEMUA BISA <br/>BEBAS IURAN BULANAN!</p>
-            <button className="btn-pesan-heading">
-              PESAN SEKARANG
-            </button>
+            <a href="#form">
+              <button className="btn-pesan-heading">
+                PESAN SEKARANG
+              </button>
+            </a>
           </Col>
-          <Col xs="6">
+          <Col xs="6" className="px-0 img-heading">
             <img src={Banner} alt="" width="100%" className="heading-img"/>
           </Col>
         </Row>

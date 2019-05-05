@@ -44,24 +44,24 @@ class Detail extends React.Component {
             </Container>
             <Container>
                <Row style={{marginTop: "5em",}}>
-                 <Col xs="6"><img src={ImageDetailLeft} alt="" width="100%"/></Col>
-                 <Col xs="6"><img src={ImageDetailRight} alt="" width="100%"/></Col>
+                 <Col xs="12" md="6" className="mb-3 mb-md-0"><img src={ImageDetailLeft} alt="" width="100%"/></Col>
+                 <Col xs="12" md="6"><img src={ImageDetailRight} alt="" width="100%"/></Col>
                </Row>  
             </Container>
             <Container>
-              <div className="container-img-info">
+              <div className="container-img-info text-center">
                 <img src={ImageInfo} alt="" className="d-inline-block"/>
                 <h2 className="d-inline-block">Tentang Ninmedia</h2>
                 <p><em>Ninmedia</em> adalah Ekosistem penyiaran Satelit Free to Air dengan frekuensi Ku-Band, yang disiarkan melalui Satelit Chinasat 11. Menjangkau seluruh pelosok Indonesia</p>
               </div>
             </Container>
             <Container>
-            <Row style={{marginTop: "5em", padding: "0 3em"}}>
-                 <Col xs="6">
+            <Row className="map-detail" style={{marginTop: "5em"}}>
+                 <Col xs="12" md="6">
                   <img src={ImageMap} alt="" width="100%"/>
                  </Col>
-                 <Col xs="6" className="text-left">
-                 <h2 className="font-weight-bold  text-dark">
+                 <Col xs="12" md="6" className="text-center">
+                 <h2 className="font-weight-bold  text-dark word-break">
                    JANGKAUAN LUAS
                  </h2>
                  <p style={{color: "#595959"}}>Siaran ninmedia menjangkau seluruh pelosok tanah air dari sabang sampai merauke.

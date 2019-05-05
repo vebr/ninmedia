@@ -62,22 +62,22 @@ class Home extends React.Component {
         <Section/>
         <Detail/>
         
-        <Row className="mt-4 col-lg-12">
+        <div className="mt-4 col-lg-12">
           <Col xs="12" className="text-center">
             <h3 className="title-form-home">Pesan Sekarang Juga, mulai 200 ribuan saja!</h3>
           </Col>
 
-          <Col className="col-sm-12 col-lg-8 offset-lg-2 mt-3 col">
+          <Col className="col-sm-12 col-lg-8 offset-lg-2 mt-3 col" id="form">
             <Form onSubmit={this.handleSubmit}>
-              <Row form className="pl-4">
-                <Col md={5} className="mr-3 ml-5">
+              <Row form className="pl-md-4">
+                <Col xs="12" md={5} className="mr-3 ml-md-5">
                   <FormGroup>
                     <Label for="name" style={{color:"black"}}>Nama</Label>
                     <Input type="text" name="nama" value={this.state.nama} id="nama"
                       onChange={({ target }) => this.setState({ nama: target.value })}/>
                   </FormGroup>
                 </Col>
-                <Col md={5} className="ml-3">
+                <Col xs="12" md={5} className="">
                   <FormGroup>
                     <Label for="no-tlp" style={{color:"black"}}>No Tlp</Label>
                     <Input type="number" name="no-tlp" value={this.state.noTlp} id="no-tlp"
@@ -85,15 +85,15 @@ class Home extends React.Component {
                   </FormGroup>
                 </Col>
               </Row>
-              <Row form className="pl-4">
-                <Col md={5} className="mr-3 ml-5">
+              <Row form className="pl-md-4">
+                <Col xs="12" md={5} className="mr-3 ml-md-5">
                   <FormGroup>
                     <Label for="email" style={{color:"black"}}>Email</Label>
                     <Input type="email" name="email" id="email" value={this.state.email}
                       onChange={({ target }) => this.setState({ email: target.value })}/>
                   </FormGroup>
                 </Col>
-                <Col md={5} className="ml-3">
+                <Col xs="12" md={5} className="">
                   <FormGroup>
                     <Label for="domisili" style={{color:"black"}}>Area Domisili</Label>
                     <Input type="text" name="domisili" id="domisili" value={this.state.areaDomisili}
@@ -106,7 +106,7 @@ class Home extends React.Component {
               </div>
             </Form>
           </Col>
-        </Row>
+        </div>
         <Footer className="pl-4"/>
       </div>
     )
