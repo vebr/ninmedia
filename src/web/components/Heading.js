@@ -1,23 +1,17 @@
 import React from 'react';
 import {Row,Col} from 'reactstrap'
-import Banner from '../../images/Banner.png'
+import Banner from '../../images/Banner-rev.jpg'
 
 class Heading extends React.Component {
   render() {
     return (
-      <Row className="banner-home col-lg-12">
-          <Col xs="6" className="pt-3 cont-home">
-            <h4 className="heading-home">Nonton Film Premium <br/>Bollywood & Hollywood</h4>
-            <p className="sub-heading-home">SEMUA BISA <br/>BEBAS IURAN BULANAN!</p>
+      <Row className="banner-home">
+          <img className="img-banner"src={Banner}/>
             <a href="#form">
               <button className="btn-pesan-heading">
                 PESAN SEKARANG
               </button>
             </a>
-          </Col>
-          <Col xs="6" className="px-0 img-heading">
-            <img src={Banner} alt="" width="100%" className="heading-img"/>
-          </Col>
         </Row>
     )  
   }
