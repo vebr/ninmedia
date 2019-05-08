@@ -1,7 +1,6 @@
 import React from 'react'
 import {
     Navbar,
-    NavbarBrand,
     Nav,
     Container,} from 'reactstrap';
 import Logo from '../../images/logo-header.png'
