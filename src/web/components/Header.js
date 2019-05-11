@@ -14,9 +14,11 @@ class Header extends React.Component{
               <Container>
                 <a className="logo-nav" href="/"><img src={Logo} width="100%" alt=""/></a>
                 <Nav className="wrapper-btn-psn" navbar>
+                <a href="#form">
                   <button className="btn-pesan ml-auto">
                       PESAN SEKARANG
-                  </button>    
+                  </button>
+                  </a>    
                 </Nav>
               </Container>
             </Navbar>

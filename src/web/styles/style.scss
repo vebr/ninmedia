@@ -88,10 +88,10 @@ body {
 }
 
 .btn-pesan-heading {
-  color: black;
+  color: red;
   border: 5px;
   border-radius: 15px;
-  background-color: #1D6CAF;
+  background-color: white;
   font-weight: bolder;
   font-size: 12px;
   margin-top: 2em;
@@ -211,7 +211,7 @@ body {
     margin-top: unset;
   }
   .btn-pesan-heading {
-    font-size: 24px;
+    font-size: 26px;
     padding: 10px 30px;
     margin-top: 3rem;
   }
@@ -412,4 +412,19 @@ input {
   h2 {
     text-align: center;
   }
+}
+
+.react-select__dropdown-indicator {
+  color: black !important;
+}
+
+.react-select__control {
+  border-color: black !important;
+}
+
+.invalid-domisili {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #dc3545;
 }

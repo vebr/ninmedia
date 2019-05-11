@@ -1,6 +1,6 @@
 {
   "name": "ninmedia",
-  "homepage": "http://ninmedia.com/",
+  "homepage": "https://ninmedia.tv/",
   "version": "0.1.0",
   "private": true,
   "main": "node_modules/expo/AppEntry.js",
@@ -40,6 +40,8 @@
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.2.2",
     "react-scroll": "^1.7.11",
+    "react-select": "^2.4.3",
+    "react-select-fast-filter-options": "^0.2.3",
     "react-slick": "^0.24.0",
     "react-timer-mixin": "^0.13.4",
     "reactstrap": "^7.1.0",

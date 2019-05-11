@@ -8,13 +8,13 @@ export function updateData(formData) {
   const {
     nama, noTlp, email, areaDomisili
   } = formData;
-  
+  console.log(formData);
   return dispatch => new Promise(async (resolve, reject) => {
     // Validation rules
-    if (!nama) return reject({ message: errorMessages.missingName });
-    if (!noTlp) return reject({ message: errorMessages.missingNoTlp });
-    if (!email) return reject({ message: errorMessages.missingEmail });
-    if (!areaDomisili) return reject({ message: errorMessages.missingAreaDomisili });
+    if (nama === "") return reject({ message: errorMessages.missingName });
+    if (noTlp === "") return reject({ message: errorMessages.missingNoTlp });
+    if (email === "") return reject({ message: errorMessages.missingEmail });
+    if (areaDomisili === "") return reject({ message: errorMessages.missingAreaDomisili });
 
     // Go to Firebase
     return FirebaseRef.child(`data`).push({ nama, noTlp, email, areaDomisili })

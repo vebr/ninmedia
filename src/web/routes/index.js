@@ -6,11 +6,14 @@ import Home from '../components/Home';
 import Cont from '../../containers/UpdateData';
 import Thanks from '../components/Thanks';
 
+const reload = () => window.location.reload();
+
 const Index = () => (
   <Switch>
     <Route
       exact
-      path="/"
+      path="/belistbrekomendasi"
+      onEnter={reload}
       render={props => (
         <Cont {...props} Layout={Home}/>
           
@@ -18,6 +21,7 @@ const Index = () => (
     />
     <Route
       exact
+      onEnter={reload}
       path="/thanks"
       render={props => (
           <Thanks/>

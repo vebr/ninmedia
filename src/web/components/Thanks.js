@@ -3,7 +3,7 @@ import {Row,Col} from 'reactstrap'
 import Logo from '../../images/white-logo.png'
 import Countdown from 'react-countdown-now';
 
-const url="https://api.whatsapp.com/send?phone=6285219846220&text=Halo%20NINMEDIA%20saya%20tertarik%20untuk%20mengetahui%20informasi%20bagaimana%2C%20cara%20mendapatkan%20channel%20premium%20pilihan%20terbaik%20%3F&fbclid=IwAR1E8znJGYkS6eWs-ad-gCfry2y-v9Raq7GuZt8FEI6cdEJ3Mx7eN_eORJ8"
+const url="https://api.whatsapp.com/send?phone=6281219094287&text=Halo%20NINMEDIA%20saya%20tertarik%20untuk%20mengetahui%20informasi%20bagaimana%2C%20cara%20mendapatkan%20channel%20premium%20pilihan%20terbaik%20%3F&fbclid=IwAR1E8znJGYkS6eWs-ad-gCfry2y-v9Raq7GuZt8FEI6cdEJ3Mx7eN_eORJ8"
 // Random component
 const Completionist = () => <div><p className="countdown">0</p><span style={{display:"none"}}>{window.location.href = url}</span></div>;
 
