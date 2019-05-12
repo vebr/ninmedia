@@ -104,6 +104,10 @@ body {
 }
 
 @media (min-width: $breakpoint-tablet) {
+  .Dashboard {
+    margin-top: 150px;
+    width: 50vw !important;
+  }
   .banner-home {
     padding:0vh;
     height: 55vh;
@@ -190,6 +194,14 @@ body {
 }
 
 @media (min-width: $breakpoint-desktop) {
+  .banner-thanks {
+    background: $bg-thanks;
+    height: 100vh;
+    padding: 20vh;
+    padding-bottom: 10vh;
+    margin: 0;
+    background-size: cover;
+   }
   .btn-pesan {
     font-size: 20px;
     min-width: 250px;
@@ -255,7 +267,7 @@ body {
 .banner-thanks {
   background: $bg-thanks;
   height: 100vh;
-  padding: 20vh;
+  padding-top: 20vh;
   padding-bottom: 10vh;
   margin: 0;
   background-size: cover;
@@ -427,4 +439,44 @@ input {
   margin-top: 0.25rem;
   font-size: 80%;
   color: #dc3545;
+}
+
+
+.Dashboard {
+  text-align: left;
+  padding: 1em;
+  margin: 1em;
+  border: 2px solid #d3d3d3;
+  border-radius: .5em;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+  margin-top: 20vh;
+}
+
+.form {
+  padding: 1em;
+}
+
+label {
+  display: flex;
+  font-weight: 600;
+}
+
+button {
+  justify-content: flex-end;
+}
+
+.Dashboard-title {
+  font-size: 1.5em;
+}
+
+.Dashboard-intro {
+  font-size: large;
+}
+
+@keyframes Dashboard-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

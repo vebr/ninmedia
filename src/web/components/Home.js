@@ -14,6 +14,14 @@ import Select from 'react-select';
 import Kabupaten from "../data/kabupaten";
 import createFilterOptions from "react-select-fast-filter-options";
 
+const d = new Date()
+        var mm = d.getMonth() + 1;
+        var dd = d.getDate().toString();
+        var yy = d.getFullYear();
+        var hh = d.getHours();
+        var m = d.getMinutes();
+        var ss = d.getSeconds();
+var myDateString = dd + '-' + mm + '-' + yy + ' | ' + hh + ':'+ m + ':' + ss;
 
 class Home extends React.Component {
   constructor(props) {
@@ -23,6 +31,7 @@ class Home extends React.Component {
       noTlp: '',
       email: '',
       areaDomisili: '',
+      tanggal:myDateString,
       namaError:false,
       noTlpError:false,
       domisiliError:false,

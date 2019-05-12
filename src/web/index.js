@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/es/integration/react';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import configureStore from '../store/index';
 import * as serviceWorker from './register-service-worker';
 import Routes from './routes/index';
@@ -32,4 +32,4 @@ ReactDOM.render(<Root />, document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+serviceWorker.register();
