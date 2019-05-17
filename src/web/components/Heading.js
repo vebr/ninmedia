@@ -7,11 +7,11 @@ class Heading extends React.Component{
     return (
       <Row className="banner-home col-lg-12">
         <img className="img-banner"src={Banner} alt="Banner landing page NINMEDIA"/>
-        <a href="#form">
+        <span onClick={this.props.formRef}>
               <button className="btn-pesan-heading">
                 PESAN SEKARANG
               </button>
-            </a>
+            </span>
       </Row>
     )
   }

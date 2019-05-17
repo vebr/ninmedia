@@ -8,6 +8,8 @@ import Footer from './Footer';
 import Section from './Section';
 import Detail from './Detail';
 
+import scrollToComponent from 'react-scroll-to-component';
+
 
 import Select from 'react-select';
 
@@ -42,6 +44,14 @@ class Home extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.onFormSubmit = this.onFormSubmit.bind(this);
+    this.scrollToTopWithCallback = this.scrollToTopWithCallback.bind(this)
+  }
+  componentDidMount() {
+    scrollToComponent(this.Blue, { offset: 0, align: 'middle', duration: 500, ease:'inCirc'});
+  }
+  scrollToTopWithCallback() {
+    let scroller = scrollToComponent(this.Violet, { offset: 0, align: 'top', duration: 1500});
+    scroller.on('end', () => console.log('Scrolling end!') );
   }
 
   handleChangeSel = (event) => {
@@ -95,8 +105,8 @@ class Home extends React.Component {
     if (success) return <Redirect to='/thanks' />
     return (
       <div>
-        <Header/>
-        <Heading/>
+        <Header formRef={this.scrollToTopWithCallback}/>
+        <Heading formRef={this.scrollToTopWithCallback}/>
         <Section/>
         <Detail/>
         
@@ -105,6 +115,7 @@ class Home extends React.Component {
             <h3 className="title-form-home">Pesan sekarang juga TV satelit ninmedia cuma 600 ribuan saja bayar sekali bisa nonton sepuasnya</h3>
           </Col>
 
+          <section ref={(section) => { this.Violet = section; }}>
           <Col className="col-sm-12 col-lg-8 offset-lg-2 mt-3 col" id="form">
             <Form onSubmit={this.handleSubmit}>
               <Row form className="pl-md-4">
@@ -159,6 +170,7 @@ class Home extends React.Component {
               </div>
             </Form>
           </Col>
+          </section>
         </div>
         <Footer className="pl-4"/>
       </div>
